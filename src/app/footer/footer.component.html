@@ -1,0 +1,13 @@
+<div>
+ <h3> {{footerValue}} </h3>
+ &nbsp;
+ <img src='assets/images/a.jpg' (click)='inc()' style=" widows: 50px; height: 50px;"> &nbsp;
+ <img src='assets/images/b.png' (click)='dec()' style=" widows: 50px; height: 50px;">
+ <ul>
+   <li *ngFor='let item of list' [ngClass]= '{blueColor: incFontSize, incFont: incFontSize, redColor: decFontSize, redFont: decFontSize}'>
+     <a class={{item.linkCls}}>
+       {{item.linkText}}
+     </a>
+    </li>
+ </ul>
+ </div>

@@ -1,0 +1,28 @@
+<div>
+<form #frm='ngForm' (ngSubmit)='submit()'>
+  
+  <div><label for="id">Id</label><input type="text" name='id' [(ngModel)]="doctor.id"></div>
+  <div><label for="doctorName">Name of Doctor</label><input type="text" name='name' [(ngModel)]="doctor.name"></div>
+  <div><label for="location">Location</label><input type="text" name='location' [(ngModel)]="doctor.location"></div>
+  <div><label for="specialization">Specialization</label><input type="text" name='specialization' [(ngModel)]="doctor.specialization"></div>
+  <div><input type="submit" class='btn btn-danger' [value]='btnText'></div>
+</form>
+</div>
+<div>
+  <table>
+    <tr>
+      <th>Id</th>
+      <th>Doctor</th>
+      <th>Location</th>
+      <th>Specialization</th>
+    </tr>
+    <tr *ngFor="let item of doctorList">
+      <td>{{item.id}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.location}}</td>
+      <td>{{item.specialization}}</td>
+      <td><button (click)='edit(item)' class='btn btn-info'>Edit</button></td>
+      <td><button (click)='delete(item)' class='btn btn-danger'>Delete</button></td>
+    </tr>
+  </table>
+</div>
