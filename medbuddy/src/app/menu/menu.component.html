@@ -1,0 +1,10 @@
+
+<nav class="nav">
+<ul class='nav nav-bar'>
+  <li *ngFor="let l of linkList" class='nav-item'>
+    <a class='nav-link' [routerLink]='l.link'>{{l.linkText}}</a>
+  </li>
+    <!-- <a class='nav-link' [href]='' *ngIf="showLogin">Login</a> 
+    <a class='nav-link' [href]='' *ngIf="showLogout">Logout</a> -->
+</ul>
+</nav>

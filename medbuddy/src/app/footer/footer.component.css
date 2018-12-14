@@ -1,0 +1,15 @@
+ul>li{
+    list-style: none;
+}
+.incFont{
+    font-size: 1.4em;
+}
+.redFont{
+    font-size: 0.8em;
+}
+.blueColor{
+    color: aqua;
+}
+.redColor{
+    color: red;
+}
