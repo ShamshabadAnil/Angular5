@@ -1,5 +1,0 @@
-<label>Medicine Name</label> &nbsp; &nbsp;
-<input type='text' (blur)='changeStatus()' [(ngModel)]="medicineName"> &nbsp; &nbsp;
-<!-- <button [disabled]='buttonStatus'>Show Stock</button> -->
-<app-get-stock-status [medicinName]='medicineName' (status)='update($event)'></app-get-stock-status>
-{{currentStatus}}
