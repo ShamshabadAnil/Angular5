@@ -46,8 +46,8 @@ import { ManageDoctorsComponent } from './manage-doctors/manage-doctors.componen
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
-  ],
+    ReactiveFormsModule,
+],
   providers: [HttpClient],
   entryComponents: [ShowlocationComponent],
   bootstrap: [AppComponent]

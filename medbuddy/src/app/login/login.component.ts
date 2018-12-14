@@ -32,6 +32,7 @@ export class LoginComponent implements OnInit {
     const uname = this.loginForm.controls.userName.value;
     const pwd = this.loginForm.controls.password.value;
     if (uname === 'Anil' && pwd === 'kumar') {
+      sessionStorage.setItem('status', 'logged');
       this.route.navigate(['home']);
 
     }
