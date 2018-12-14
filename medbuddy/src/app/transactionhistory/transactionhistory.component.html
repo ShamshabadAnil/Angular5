@@ -17,7 +17,11 @@
   <td>{{item.details | uppercase}}</td>
   <td>{{item.date | date: medium}}</td>
   <td>{{item.value | currency: 'INR' }}</td>
+  <td><a [routerLink]="['/history', item.id]">Show More</a></td>
 </tr>
 </table>
+</div>
+<div>
+  {{info}}
 </div>
 <br>
