@@ -1,0 +1,13 @@
+
+<div>
+  <table class='table table-striped'>
+ <th *ngFor="let head of headers">{{head}}</th>
+
+  <tr *ngFor="let customer of customerListChild">
+    <td> {{customer.Id}} &nbsp; </td>
+    <td> {{customer.Name}} &nbsp;  </td>
+    <td> {{customer.Email}} &nbsp; </td>
+    <td> {{customer.DOB}}  &nbsp; </td>
+  </tr>
+  </table>
+</div>
