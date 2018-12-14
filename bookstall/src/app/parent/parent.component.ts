@@ -8,17 +8,17 @@ import { Component, OnInit, OnChanges,  SimpleChanges } from '@angular/core';
 export class ParentComponent implements OnInit, OnChanges {
 
   constructor() {
-    alert('Parent Constructor initialized ***');
+    // alert('Parent Constructor initialized ***');
     console.log('Parent Constructor initialized ***');
   }
 
   ngOnInit() {
-    alert('Parent INIT initialized ***');
+    // alert('Parent INIT initialized ***');
     console.log('Parent INIT initialized ***');
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    alert('Parent Onchange called ***');
+    // alert('Parent Onchange called ***');
     console.log('Parent Onchange called ***');
   }
 
